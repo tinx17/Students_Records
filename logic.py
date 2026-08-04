@@ -30,14 +30,37 @@ class Level:
         self.level = level
 
 class Classroom(Level):
-    def __init__(self, level):
+    def __init__(self, level, name):
         super().__init__(level)
+        self.name = name
         self.students = []
+        self.numbers = len(self.students)
         self.matters = {}
         self.matters_teachers = {}
 
+    def __str__(self):
+        return f"{self.name} {self.numbers}"
+
     def add_matter(self, matter, coeff):
+        if matter in self.matters:
+            return f"Cette matière et déjà inscrite"
         self.matters[matter] = coeff
+        return f"La matière {matter} a été ajouté"
+
+    def remove_matter(self, matter):
+        if matter in self.matters:
+            del self.matters[matter]
+            return f"La matière {matter} a été supprimé avec succès"
+        return f"La matière {matter} n'est pas comprise dans les matières de cette classe "
+
+    def add_student(self,  matricule, surname, name, date, sex):
+        id_ = surname.upper() + name.lower()
+        for student in self.students:
+            if id_ == student.id:
+                return f"L'élève {id} est déjà inscrit dans cette classe"
+        self.students.append(Student(matricule, surname, name, date, sex))
+        return f"L'élève {id} a été ajouté avec succès dans cette classe"
+
 
 
 class Student(object):
@@ -45,11 +68,12 @@ class Student(object):
         self.name = name
         self.matricule = matricule
         self.surname = surname
+        self.id = surname.upper() + name.lower()
         self.date = date
         self.sex = sex
 
     def __str__(self):
-        return f"{self.surname:<20} {self.name:<20}"
+        return f"{self.surname:<20} |{self.name:<20} |{str(self.date)} |{self.sex}"
 
 class Parent:
     def __init__(self, name, surname, contact, profession):
