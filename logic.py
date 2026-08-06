@@ -110,6 +110,16 @@ class Classroom(Level):
 
 
 class Student(object):
+    class Parent:
+        def __init__(self, name, surname, contact, profession):
+            self.name = name
+            self.surname = surname
+            self.contact = contact
+            self.profession = profession
+
+        def __str__(self):
+            return f"{self.surname:<20} {self.name:<20}"
+
     def __init__(self, matricule, surname, name, date, sex):
         self.name = name
         self.matricule = matricule
@@ -121,15 +131,6 @@ class Student(object):
     def __str__(self):
         return f"◄◄◄◄◄|{self.matricule:<20} |{self.surname:<20} |{self.name:<20} |{str(self.date):<20} |{self.sex}"
 
-class Parent:
-    def __init__(self, name, surname, contact, profession):
-        self.name = name
-        self.surname = surname
-        self.contact = contact
-        self.profession = profession
-
-    def __str__(self):
-        return f"{self.surname:<20} {self.name:<20}"
 
 class Teacher:
     def __init__(self, surname, name, speciality, contact):
@@ -148,21 +149,23 @@ class Matter:
     def __str__(self):
         return f"{self.name:<20}"
 
-classe = Classroom(2, "6emeA")
-print(classe.display_students())
 
-classe.add_student("123456", "AHOUMENOU", "Royal", "01/02/03", "M")
-classe.add_student("123698", "AHOUMENOU", "Belfort", "01/02/03", "M")
-classe.add_student("123698", "AHOUMENOU", "Beauchamp", "01/02/03", "M")
-classe.add_student("123698", "AHOUMENOU", "Ladislas", "01/02/03", "M")
-classe.add_student("123698", "AHOUMENOU", "Ashen", "01/02/03", "M")
+if __name__ =="main":
+    classe = Classroom(2, "6emeA")
+    print(classe.display_students())
 
-classe.add_matter(Matter("Mathématiques"), 5)
-classe.add_matter("Pct", 4)
-classe.add_matter("Anglais", 3)
-classe.affect_teacher("Pct", "aerr", "aze", "pct", "0102030405")
-classe.affect_teacher("Anglais", "ac", "avrt", "anglais", "0205080709")
-print(classe.display_teachers())
-print(classe.matters_teachers.items())
+    classe.add_student("123456", "AHOUMENOU", "Royal", "01/02/03", "M")
+    classe.add_student("123698", "AHOUMENOU", "Belfort", "01/02/03", "M")
+    classe.add_student("123698", "AHOUMENOU", "Beauchamp", "01/02/03", "M")
+    classe.add_student("123698", "AHOUMENOU", "Ladislas", "01/02/03", "M")
+    classe.add_student("123698", "AHOUMENOU", "Ashen", "01/02/03", "M")
+
+    classe.add_matter(Matter("Mathématiques"), 5)
+    classe.add_matter("Pct", 4)
+    classe.add_matter("Anglais", 3)
+    classe.affect_teacher("Pct", "aerr", "aze", "pct", "0102030405")
+    classe.affect_teacher("Anglais", "ac", "avrt", "anglais", "0205080709")
+    print(classe.display_teachers())
+    print(classe.matters_teachers.items())
 
 
