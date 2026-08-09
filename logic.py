@@ -34,12 +34,16 @@ class Classroom(Level):
         super().__init__(level)
         self.name = name
         self.students = []
-        self.numbers = len(self.students)
         self.matters = {}
         self.matters_teachers = {}
 
     def __str__(self):
         return f"Classe: {self.name:<20} Effectif: {self.numbers}"
+
+    @property
+    def numbers(self):
+        return len(self.students)
+
 
     def add_matter(self, matter, coeff):
         if matter in self.matters:
@@ -72,7 +76,6 @@ class Classroom(Level):
             if matricule == student.matricule:
                 return f"Le matricule {matricule} est déjà présent en {self.name}."
         self.students.append(Student(matricule, surname, name, date, sex))
-        self.numbers += 1
         return f"L'élève {id_} a été ajouté avec succès en {self.name}."
 
     def remove_student(self, id_):
@@ -150,7 +153,7 @@ class Matter:
         return f"{self.name:<20}"
 
 
-if __name__ =="main":
+if __name__ =="__main__":
     classe = Classroom(2, "6emeA")
     print(classe.display_students())
 

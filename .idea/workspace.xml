@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2051ce26-1b10-4908-8a21-71b2e6ea13b2" name="Changes" comment="Mise en place des méthodes pour l'ajout des étudiants, leur retrait d'une classe, pour l'affectation d'un prof dans une matière. Création d'une méthode pour l'affichage des étudiants, des matières et des professeurs. Modification de la méthode __str__ de la classe &quot;Classroom&quot;">
-      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+    <list default="true" id="2051ce26-1b10-4908-8a21-71b2e6ea13b2" name="Changes" comment="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python..executor": "Run",
+    "Python.az.executor": "Run",
     "Python.gui.executor": "Run",
     "Python.logic.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -111,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785999652869</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py">
+      <option name="closed" value="true" />
+      <created>1786029298718</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786029298718</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py">
+      <option name="closed" value="true" />
+      <created>1786029342250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786029342250</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +148,7 @@
     <MESSAGE value="#" />
     <MESSAGE value="Mise en place des méthodes pour l'ajout des matières et des élèves dans une classe. Les matières sont rajoutés direcctement avec leur coefficient respectifs tandis que les élèves sont inscrits avec leurs infos personnelles." />
     <MESSAGE value="Mise en place des méthodes pour l'ajout des étudiants, leur retrait d'une classe, pour l'affectation d'un prof dans une matière. Création d'une méthode pour l'affichage des étudiants, des matières et des professeurs. Modification de la méthode __str__ de la classe &quot;Classroom&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise en place des méthodes pour l'ajout des étudiants, leur retrait d'une classe, pour l'affectation d'un prof dans une matière. Création d'une méthode pour l'affichage des étudiants, des matières et des professeurs. Modification de la méthode __str__ de la classe &quot;Classroom&quot;" />
+    <MESSAGE value="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py" />
   </component>
 </project>
