@@ -130,6 +130,34 @@ class Student(object):
         self.id = surname.upper().strip() +" " +name.lower().strip()
         self.date = date
         self.sex = sex
+        #Grâce à l'attribut self.classe j'aurais accès aux matières de la classe de l'élève
+        self.classe = classe
+        #Le problème est de déterminer la structure du recueil de notes de l'élève.
+        #Je pensais à une structure{Matière:{"Int1":"", "Int2":"", "Int3":"", "Devoir":, "Compo":, }}
+        self._record = {matter:{"Coeff": classe.matters[matter],"Int1": "", "Int2":"", "Int3":"", "Devoir":"", "Compo":""} for matter in classe.matters}
+        #Il faudrait maintenant que cette liste de matière se mette à jour automatiquement
+        # dès qu'une nouvelle matière est ajoutée à la classe
+        #Je pense utiliser un setter, mais j'ignore concrètement comment y parvenir
+        #Mission accomplie. J'y suis arrivé en effectuant une mise à jour dans le code de la classe
+        #notamment au niveau de l'ajout d'une matière pour avoir un effet en cascade.
+
+    @property
+    def record(self):
+        return self._record
+    @record.setter
+    def record(self, record):
+        self._record = record
+
+    def input_note(self, matter, evalt, note:float):
+        if not matter in self.classe.matters.keys():
+            return f"Cet élève ne compose pas cette matière"
+        if not isinstance(note, float):
+            return f"Que des flottants"
+        if note>20 or note<0:
+            return "Que des valeurs poitives"
+        self._record[matter][evalt] = note
+        return f"Note ajoutée avec succès"
+
 
     def __str__(self):
         return f"◄◄◄◄◄|{self.matricule:<20} |{self.surname:<20} |{self.name:<20} |{str(self.date):<20} |{self.sex}"
