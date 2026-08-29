@@ -50,6 +50,8 @@ class Classroom(Level):
             return f"Cette matière et déjà inscrite"
         self.matters[matter] = coeff
         self.matters_teachers[matter] = None
+        for student in self.students.values():
+            student.record[matter.name] = {"Coeff": classe.matters[matter],"Int1": "", "Int2":"", "Int3":"", "Devoir":"", "Compo":""}
         return f"La matière {matter} a été ajouté"
 
     def remove_matter(self, matter):
