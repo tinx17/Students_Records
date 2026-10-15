@@ -1,0 +1,71 @@
+{
+  "teachers": [
+    {
+      "surname": "DOSSOU",
+      "name": "Marc",
+      "speciality": "Maths",
+      "contact": "0102030405"
+    },
+    {
+      "surname": "AZETY",
+      "name": "fef",
+      "speciality": "Pct",
+      "contact": "012536414"
+    }
+  ],
+  "classes": [
+    {
+      "level": 5,
+      "name": "6eme",
+      "matters": {
+        "PCT": 5,
+        "dfg": 2
+      },
+      "teachers": {
+        "PCT": "AZETY fef",
+        "dfg": "DOSSOU marc"
+      },
+      "students": [
+        {
+          "matricule": "145236",
+          "surname": "AZERTy",
+          "name": "aqw",
+          "date": "45871",
+          "sex": "M",
+          "record": {
+            "PCT": {
+              "Coeff": 5,
+              "Int1": "",
+              "Int2": "",
+              "Int3": "",
+              "Devoir": "",
+              "Compo": ""
+            },
+            "dfg": {
+              "Coeff": 2,
+              "Int1": "",
+              "Int2": "",
+              "Int3": "",
+              "Devoir": "",
+              "Compo": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "5eme",
+      "matters": {},
+      "teachers": {},
+      "students": []
+    },
+    {
+      "level": 4,
+      "name": "as",
+      "matters": {},
+      "teachers": {},
+      "students": []
+    }
+  ]
+}

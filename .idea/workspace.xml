@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2051ce26-1b10-4908-8a21-71b2e6ea13b2" name="Changes" comment="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py">
+    <list default="true" id="2051ce26-1b10-4908-8a21-71b2e6ea13b2" name="Changes" comment="Amélioration du gui et délimitation des différentes sectionss de la mainframe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic.py" afterDir="false" />
@@ -44,19 +44,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python..executor": "Run",
-    "Python.az.executor": "Run",
-    "Python.gui.executor": "Run",
-    "Python.logic.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "mine"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python..executor&quot;: &quot;Run&quot;,
+    &quot;Python.az.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hj.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logic.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mine&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Python.gui">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Student_Records" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Student_Records" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python.logic" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -128,7 +181,31 @@
       <option name="project" value="LOCAL" />
       <updated>1786029342250</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Amélioration du gui et délimitation des différentes sectionss de la mainframe">
+      <option name="closed" value="true" />
+      <created>1786294404661</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1786294404661</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ajout d'attributs et de méthodes à la classe élève pour pouvoir inscrire des notes à un élève.">
+      <option name="closed" value="true" />
+      <created>1788008095565</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1788008095565</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Amélioration de la fonction &quot;add_matter&quot; pour que l'ajout d'une matière dans une classe soit aussi observer dans le dictionnaire de notes des élèves.">
+      <option name="closed" value="true" />
+      <created>1788008177215</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1788008177215</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +226,20 @@
     <MESSAGE value="Mise en place des méthodes pour l'ajout des matières et des élèves dans une classe. Les matières sont rajoutés direcctement avec leur coefficient respectifs tandis que les élèves sont inscrits avec leurs infos personnelles." />
     <MESSAGE value="Mise en place des méthodes pour l'ajout des étudiants, leur retrait d'une classe, pour l'affectation d'un prof dans une matière. Création d'une méthode pour l'affichage des étudiants, des matières et des professeurs. Modification de la méthode __str__ de la classe &quot;Classroom&quot;" />
     <MESSAGE value="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification mineures sur logic.py.&#10;Mise en place des premières clasess de gui dans gui.py" />
+    <MESSAGE value="Amélioration du gui et délimitation des différentes sectionss de la mainframe" />
+    <MESSAGE value="Ajout d'attributs et de méthodes à la classe élève pour pouvoir inscrire des notes à un élève." />
+    <MESSAGE value="Amélioration de la fonction &quot;add_matter&quot; pour que l'ajout d'une matière dans une classe soit aussi observer dans le dictionnaire de notes des élèves." />
+    <option name="LAST_COMMIT_MESSAGE" value="Amélioration de la fonction &quot;add_matter&quot; pour que l'ajout d'une matière dans une classe soit aussi observer dans le dictionnaire de notes des élèves." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gui.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
